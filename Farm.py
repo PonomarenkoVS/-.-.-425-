@@ -1,16 +1,7 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[64]:
-
-
 from tkinter import *
 from tkinter import ttk
 import re
 import random
-
-
-# In[65]:
 
 
 class Annual:
@@ -54,9 +45,6 @@ class Annual:
         return self.penalty
 
 
-# In[66]:
-
-
 class Contract:
     
     def __init__ (self, contract_duration, 
@@ -82,10 +70,6 @@ class Contract:
     def get_duration(self):
         return self.num_years
         
-
-
-# In[67]:
-
 
 class Farm:
     
@@ -236,10 +220,6 @@ class Farm:
         return (0, food_bought, food_needed, starved, new_young, new_adult, new_old, acc_died, sold_young, price_young, sold_adult, price_adult, sold_old, price_old, penalty) 
         
 
-
-# In[68]:
-
-
 class Model:
     
     def __init__(self):
@@ -301,10 +281,6 @@ class Model:
     def reset_model(self):
         del(self.farm)    
         
-
-
-# In[69]:
-
 
 root = Tk()
 root.title("Моделирование животноводческой фермы")
